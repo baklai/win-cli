@@ -20,6 +20,8 @@ Your documentation has been created successfully!
 
 </alert>
 
+CMD — интерпретатор командной строки для операционных систем OS/2, Windows CE и для семейства операционных систем, базирующихся на Windows NT. cmd.exe является аналогом COMMAND.COM, который используется в семействах MS-DOS и Windows 9x.
+
 ## Features
 
 <list :items="features"></list>
