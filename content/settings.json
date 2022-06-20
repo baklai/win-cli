@@ -1,6 +1,6 @@
 {
-  "title": "CMD Windows",
-  "url": "https://baklai.github.io/win-cmd",
+  "title": "CLI Windows",
+  "url": "https://win-cli.netlify.app/",
   "logo": {
     "light": "/logo-light.png",
     "dark": "/logo-dark.png"
