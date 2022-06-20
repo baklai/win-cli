@@ -9,7 +9,7 @@ category: Руководство
 
 ### Первая команда в cmd
 
-Введите в терминал командную строку <b>[ver](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/ver 'Microsoft Dosc')</b>, для получения версии операционной системы:
+Введите в терминал командную строку **[ver](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/ver 'Microsoft Dosc')**, для получения версии операционной системы:
 
 ```cmd[cmd]
 Microsoft Windows [Version 10.0.19044.1766]

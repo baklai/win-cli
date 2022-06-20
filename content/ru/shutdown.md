@@ -5,7 +5,7 @@ position: 5
 category: Руководство
 ---
 
-Служебная программа командной строки <b>[shutdown](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/shutdown 'Microsoft Dosc')</b> позволяет выключить или перезагрузить локальные или удаленные компьютеры по одному.
+Служебная программа командной строки **[shutdown](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/shutdown 'Microsoft Dosc')** позволяет выключить или перезагрузить локальные или удаленные компьютеры по одному.
 
 ### Выключение компьютера
 
