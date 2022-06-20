@@ -104,7 +104,7 @@ export default theme({
   },
 
   googleAnalytics: {
-    id: ''
+    id: 'G-EKN6ETK7QD'
   },
 
   docs: {
