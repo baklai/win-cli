@@ -60,7 +60,7 @@ export default theme({
       name: 'CLI Windows',
       author: 'Dmitrii Baklai',
       description: 'Windows command line interpreter',
-      theme_color: '#000',
+      theme_color: '#ffffff',
       lang: 'ru',
       ogType: 'website',
       ogHost: 'win-cli.netlify.app',
@@ -82,7 +82,7 @@ export default theme({
       description: 'Windows command line interpreter',
       lang: 'ru',
       display: 'standalone',
-      background_color: '#000',
+      background_color: '#ffffff',
       start_url: '/?standalone=true',
       useWebmanifestExtension: false,
       orientation: 'portrait'
