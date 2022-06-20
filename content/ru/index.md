@@ -4,9 +4,6 @@ description: ''
 position: 1
 category: ''
 features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
 ---
 
 <img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
