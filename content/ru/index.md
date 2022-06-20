@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Введение
 description: ''
 position: 1
 category: ''
@@ -16,7 +16,7 @@ features:
 
 <alert type="success">
 
-Your documentation has been created successfully!
+Ваша документация успешно создана!
 
 </alert>
 
@@ -26,4 +26,4 @@ CMD — интерпретатор командной строки для опе
 
 <list :items="features"></list>
 
-<p class="flex items-center">Enjoy light and dark mode:&nbsp;<app-color-switcher class="inline-flex ml-2"></app-color-switcher></p>
+<p class="flex items-center">Наслаждайтесь светлым и темным режимом:&nbsp;<app-color-switcher class="inline-flex ml-2"></app-color-switcher></p>

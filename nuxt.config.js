@@ -26,12 +26,42 @@ export default theme({
         name: 'description',
         content: 'Windows command line interpreter'
       },
-      { name: 'google', content: 'notranslate' }
+      { name: 'google', content: 'notranslate' },
+      {
+        name: 'google-site-verification',
+        content: 'bW4Hh2lyNwtDysU1Ty1WjKUx3vkISluriUOI_SapisE'
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
-  buildModules: ['@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/google-analytics', '@nuxtjs/pwa'],
+
+  i18n: {
+    locales: () => [
+      {
+        code: 'ru',
+        iso: 'ru-RU',
+        file: 'ru-RU.js',
+        name: 'Русский'
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.js',
+        name: 'English'
+      }
+    ],
+    defaultLocale: 'ru',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'locale',
+      redirectOn: 'root'
+    },
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
+  },
 
   pwa: {
     meta: {
@@ -39,12 +69,12 @@ export default theme({
       viewport: 'width=device-width, initial-scale=1',
       mobileApp: true,
       mobileAppIOS: true,
-      appleStatusBarStyle: '#000000',
+      appleStatusBarStyle: 'black-translucent',
       favicon: true,
       name: 'CLI Windows',
       author: 'Dmitrii Baklai',
       description: 'Windows command line interpreter',
-      theme_color: '#000000',
+      theme_color: '#000',
       lang: 'ru',
       ogType: 'website',
       ogHost: 'win-cli.netlify.app',
@@ -53,7 +83,12 @@ export default theme({
         width: '50',
         height: '50',
         type: 'image/png'
-      }
+      },
+      ogUrl: 'https://win-cli.netlify.app',
+      twitterCard: 'summary_card',
+      twitterSite: 'https://win-cli.netlify.app',
+      twitterCreator: 'Dmitrii Baklai',
+      nativeUI: true
     },
     manifest: {
       name: 'CLI Windows',
@@ -61,8 +96,15 @@ export default theme({
       description: 'Windows command line interpreter',
       lang: 'ru',
       display: 'standalone',
-      background_color: '#000000'
+      background_color: '#000',
+      start_url: '/?standalone=true',
+      useWebmanifestExtension: false,
+      orientation: 'portrait'
     }
+  },
+
+  googleAnalytics: {
+    id: ''
   },
 
   docs: {
