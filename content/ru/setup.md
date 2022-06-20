@@ -4,20 +4,12 @@ description: ''
 position: 2
 category: Руководство
 ---
+
 Нажмите на клавиатуре Win + R, чтобы открыть меню «Выполнить», затем введите «cmd».
 
 ### Первая команда в cmd
 
-  <code-block label="NPM">
-
-```bash
-npm install @nuxtjs/xxx
-```
-
-  </code-block>
-</code-group>
-
-Введите в терминал командную строку <b>ver</b>, для получения версии операционной системы:
+Введите в терминал командную строку <b>[ver](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/ver)</b>, для получения версии операционной системы:
 
 ```cmd[cmd]
 Microsoft Windows [Version 10.0.19044.1766]
@@ -26,7 +18,5 @@ Microsoft Windows [Version 10.0.19044.1766]
 C:\Users\User>ver
 
 Microsoft Windows [Version 10.0.19044.1766]
-
-
 
 ```
