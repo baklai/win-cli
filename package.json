@@ -1,7 +1,31 @@
 {
   "name": "win-cmd",
   "version": "1.0.0",
-  "private": true,
+  "description": "Windows command line interpreter",
+  "author": {
+    "name": "Dmitrii Baklai",
+    "email": "d.n.baklai@gmail.com",
+    "url": "https://baklai.github.io"
+  },
+  "homepage": "https://github.com/baklai/win-cmd#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baklai/win-cmd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baklai/win-cmd/issues"
+  },
+  "keywords": [
+    "node.js",
+    "nuxt.js",
+    "content",
+    "pwa"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.15.0",
+    "npm": ">=8.5.5"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

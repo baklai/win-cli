@@ -44,23 +44,9 @@ export default theme({
         iso: 'ru-RU',
         file: 'ru-RU.js',
         name: 'Русский'
-      },
-      {
-        code: 'en',
-        iso: 'en-US',
-        file: 'en-US.js',
-        name: 'English'
       }
     ],
-    defaultLocale: 'ru',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'locale',
-      redirectOn: 'root'
-    },
-    vueI18n: {
-      fallbackLocale: 'en'
-    }
+    defaultLocale: 'ru'
   },
 
   pwa: {
