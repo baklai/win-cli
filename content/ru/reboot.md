@@ -1,22 +1,22 @@
 ---
-title: Выключение
+title: Перезагрузка
 description: 'Выключение или перезагрузка локального или удаленного компьютера.'
-position: 5
+position: 4
 category: Руководство
 ---
 
 Служебная программа командной строки <b>[shutdown](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/shutdown 'Microsoft Dosc')</b> позволяет выключить или перезагрузить локальные или удаленные компьютеры по одному.
 
-### Выключение компьютера
+### Перезагрузка компьютера
 
 ```cmd[cmd]
-shutdown -s
+shutdown -r
 ```
 
-### Выключение компьютера через 5 секунд
+### Перезагрузка компьютера через 5 секунд
 
 ```cmd[cmd]
-shutdown -s -t 5000
+shutdown -r -t 5000
 ```
 
 ## Параметры

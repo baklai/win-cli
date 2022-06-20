@@ -9,11 +9,9 @@ features:
 <img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
 <img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
 
-Microsoft Docs for [cmd](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/cmd).
+Microsoft Docs for [cmd](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/cmd 'Microsoft Dosc').
 
 <alert type="success">
-
-<!-- a normal html comment -->
 
 Документация успешно получена!
 
