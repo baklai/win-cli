@@ -90,7 +90,7 @@ export default theme({
   },
 
   googleAnalytics: {
-    id: 'G-EKN6ETK7QD'
+    id: 'UA-232457884-1'
   },
 
   docs: {
