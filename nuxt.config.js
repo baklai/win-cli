@@ -27,7 +27,8 @@ export default theme({
         content: 'Windows command line interpreter'
       },
       { name: 'google', content: 'notranslate' }
-    ]
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   buildModules: ['@nuxtjs/pwa'],
@@ -43,7 +44,7 @@ export default theme({
       name: 'CLI Windows',
       author: 'Dmitrii Baklai',
       description: 'Windows command line interpreter',
-      theme_color: '#000',
+      theme_color: '#1a202c',
       lang: 'ru',
       ogType: 'website',
       ogHost: 'win-cli.netlify.app',
@@ -60,7 +61,7 @@ export default theme({
       description: 'Windows command line interpreter',
       lang: 'ru',
       display: 'standalone',
-      background_color: '#000'
+      background_color: '#1a202c'
     }
   },
 
