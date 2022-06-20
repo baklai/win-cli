@@ -1,5 +1,9 @@
 # Windows command line interpreter
 
+<img src="/static/img/preview.png">
+
+## Demo application -> [Windows cli service](https://win-cli.netlify.app/)
+
 ## Setup
 
 Install dependencies:
