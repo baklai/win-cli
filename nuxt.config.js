@@ -99,5 +99,9 @@ export default theme({
 
   content: {
     liveEdit: true
+  },
+
+  build: {
+    publicPath: 'app/'
   }
 });
