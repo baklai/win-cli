@@ -27,6 +27,6 @@ C:\Users\User>ver
 
 Microsoft Windows [Version 10.0.19044.1766]
 
-C:\Users\User>
+
 
 ```

@@ -9,7 +9,7 @@ features:
 <img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
 <img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
 
-Microsoft Docs for [cmd](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmd).
+Microsoft Docs for [cmd](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/cmd).
 
 <alert type="success">
 
