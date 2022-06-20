@@ -1,24 +1,13 @@
 ---
-title: Setup
+title: Запуск
 description: ''
 position: 2
-category: Guide
+category: Руководство
 ---
+Нажмите на клавиатуре Win + R, чтобы открыть меню «Выполнить», затем введите «cmd».
 
-Check the [Nuxt.js documentation](https://nuxtjs.org/guides/configuration-glossary/configuration-modules) for more information about installing and using modules in Nuxt.js.
+### Первая команда в cmd
 
-## Installation
-
-Add `@nuxtjs/xxx` dependency to your project:
-
-<code-group>
-  <code-block label="Yarn" active>
-
-```bash
-yarn add @nuxtjs/xxx
-```
-
-  </code-block>
   <code-block label="NPM">
 
 ```bash
@@ -28,15 +17,16 @@ npm install @nuxtjs/xxx
   </code-block>
 </code-group>
 
-Then, add `@nuxtjs/xxx` to the `modules` section of `nuxt.config.js`:
+Введите в терминал командную строку <b>ver</b>, для получения версии операционной системы:
 
-```js[nuxt.config.js]
-{
-  modules: [
-    '@nuxtjs/xxx'
-  ],
-  xxx: {
-    // Options
-  }
-}
+```cmd[cmd]
+Microsoft Windows [Version 10.0.19044.1766]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Users\User>ver
+
+Microsoft Windows [Version 10.0.19044.1766]
+
+C:\Users\User>
+
 ```
