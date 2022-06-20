@@ -5,7 +5,7 @@ position: 3
 category: Руководство
 ---
 
-Настройка прокси-сервера с помощью команды **[netsh](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/netsh 'Microsoft Dosc')**.
+Настройка прокси-сервера с помощью команды **[netsh](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/netsh 'Microsoft Dosc')**.
 Служебная программа командной строки, которая позволяет отображать или изменять сетевую конфигурацию компьютера, либо локально, либо удаленно.
 
 ### Туннелировать весь интернет-трафик через прокси
