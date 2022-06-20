@@ -39,7 +39,7 @@ export default theme({
       viewport: 'width=device-width, initial-scale=1',
       mobileApp: true,
       mobileAppIOS: true,
-      appleStatusBarStyle: 'white',
+      appleStatusBarStyle: '#000000',
       favicon: true,
       name: 'CLI Windows',
       author: 'Dmitrii Baklai',
