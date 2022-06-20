@@ -39,12 +39,12 @@ export default theme({
       viewport: 'width=device-width, initial-scale=1',
       mobileApp: true,
       mobileAppIOS: true,
-      appleStatusBarStyle: 'black',
+      appleStatusBarStyle: 'white',
       favicon: true,
       name: 'CLI Windows',
       author: 'Dmitrii Baklai',
       description: 'Windows command line interpreter',
-      theme_color: '#1a202c',
+      theme_color: '#000000',
       lang: 'ru',
       ogType: 'website',
       ogHost: 'win-cli.netlify.app',
@@ -61,7 +61,7 @@ export default theme({
       description: 'Windows command line interpreter',
       lang: 'ru',
       display: 'standalone',
-      background_color: '#1a202c'
+      background_color: '#000000'
     }
   },
 
