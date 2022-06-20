@@ -27,8 +27,7 @@ export default theme({
         content: 'Windows command line interpreter'
       },
       { name: 'google', content: 'notranslate' }
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    ]
   },
 
   buildModules: ['@nuxtjs/pwa'],
