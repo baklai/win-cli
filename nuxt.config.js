@@ -42,6 +42,8 @@ export default theme({
   buildModules: ['@nuxtjs/google-analytics', '@nuxtjs/pwa'],
 
   i18n: {
+    lazy: true,
+    langDir: '~~/lang/',
     locales: () => [
       {
         code: 'ru',
