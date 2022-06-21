@@ -1,5 +1,7 @@
 {
   "title": "CLI Windows",
+  "defaultBranch":"main",
+  "defaultDir": "",
   "url": "https://win-cli.netlify.app/",
   "logo": {
     "light": "/logo-light.png",

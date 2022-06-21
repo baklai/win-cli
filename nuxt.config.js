@@ -35,6 +35,10 @@ export default theme({
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
+  loading: { color: '#00A2E9' },
+
+  css: ['~~/assets/css/main.css'],
+
   buildModules: ['@nuxtjs/google-analytics', '@nuxtjs/pwa'],
 
   i18n: {
