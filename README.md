@@ -15,7 +15,7 @@ npm run install
 ## Development
 
 ```bash
-npm run docs:dev
+npm run dev
 ```
 
 ## Static Generation
@@ -23,9 +23,9 @@ npm run docs:dev
 This will create the `dist/` directory for publishing to static hosting:
 
 ```bash
-npm run docs:build
+npm run build
 ```
 
-To preview the static generated app, run `npm run docs:preview`
+To preview the static generated app, run `npm run preview`
 
 For detailed explanation on how things work, checkout [vitepress](https://vitepress.dev/).
