@@ -1,6 +1,6 @@
 # Windows command line interpreter
 
-<img src="/static/preview.png">
+<img src="/src/public/img/preview.png">
 
 ## Demo application -> [Windows cli service](https://win-cli.netlify.app/)
 
@@ -15,7 +15,7 @@ npm run install
 ## Development
 
 ```bash
-npm run dev
+npm run docs:dev
 ```
 
 ## Static Generation
@@ -23,9 +23,9 @@ npm run dev
 This will create the `dist/` directory for publishing to static hosting:
 
 ```bash
-npm run generate
+npm run docs:build
 ```
 
-To preview the static generated app, run `npm run start`
+To preview the static generated app, run `npm run docs:preview`
 
-For detailed explanation on how things work, checkout [nuxt/content](https://content.nuxtjs.org) and [@nuxt/content theme docs](https://content.nuxtjs.org/themes-docs).
+For detailed explanation on how things work, checkout [vitepress](https://vitepress.dev/).
