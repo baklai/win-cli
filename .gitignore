@@ -4,7 +4,50 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sw?
+
+# Themes
+public/themes/soho-light/
+public/themes/soho-dark/
+public/themes/viva-light/
+public/themes/viva-dark/
+public/themes/mira/
+public/themes/nano/
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# File hosting directories
+static/docs/*
+
+# File hosting directories
+public/docs/*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -37,12 +80,12 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+# A manifestation of the manifest
+package-lock.json
+
 # Dependency directories
 node_modules/
 jspm_packages/
-
-# Package lock file
-package-lock.json
 
 # TypeScript v1 declaration files
 typings/
@@ -74,6 +117,8 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+.env.dev
+.env.prod
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -85,11 +130,12 @@ typings/
 .nuxt
 dist
 
+
+# Catalog with certificates
+certs
+
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and *not* Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
 
 # vuepress build output
 .vuepress/dist
@@ -108,3 +154,6 @@ dist
 
 # Service worker
 sw.*
+
+# Vitepress
+cache

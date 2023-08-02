@@ -1,5 +1,5 @@
 {
-  "name": "win-cmd",
+  "name": "win-cli",
   "version": "1.0.0",
   "description": "Windows command line interpreter",
   "author": {
@@ -7,39 +7,30 @@
     "email": "d.n.baklai@gmail.com",
     "url": "https://baklai.github.io"
   },
-  "homepage": "https://github.com/baklai/win-cmd#readme",
+  "homepage": "https://github.com/baklai/win-cli#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/baklai/win-cmd.git"
+    "url": "git+https://github.com/baklai/win-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/baklai/win-cmd/issues"
+    "url": "https://github.com/baklai/win-cli/issues"
   },
   "keywords": [
-    "node.js",
-    "nuxt.js",
-    "content",
-    "pwa"
+    "vue.js",
+    "vitepress"
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=16.15.0",
-    "npm": ">=8.5.5"
+    "node": ">18.16.0",
+    "npm": ">9.6.6"
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=win-cli-demo --cleanup"
+    "docs:dev": "vitepress --port 8080 dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
-  "dependencies": {
-    "@nuxt/content-theme-docs": "^0.11.0",
-    "@nuxtjs/pwa": "^3.3.5",
-    "nuxt": "^2.15.8"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.4.0",
-    "push-dir": "^0.4.1"
+    "vitepress": "^1.0.0-beta.5"
   }
 }
