@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   base: '/',
   srcDir: 'src',
-  outDir: '../dist',
+  outDir: 'dist',
 
   appearance: true,
   cleanUrls: true,
