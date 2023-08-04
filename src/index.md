@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Windows command line interpreter
+title: Переможець командного рядка
 
 hero:
   name: CLI Windows

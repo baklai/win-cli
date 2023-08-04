@@ -15,10 +15,10 @@ export default withPwa(
     lang: 'uk-UA',
     title: 'WINCLI',
     titleTemplate: 'WINCLI • :title',
-    description: 'Windows command line interpreter',
+    description: 'Переможець командного рядка',
 
     head: [
-      ['meta', { property: 'og:title', content: 'WIN CLI • Windows command line interpreter' }],
+      ['meta', { property: 'og:title', content: 'WIN CLI • Переможець командного рядка' }],
       ['link', { rel: 'stylesheet', href: '/css/style.css' }]
     ],
 
@@ -77,7 +77,7 @@ export default withPwa(
 
       editLink: {
         pattern: 'https://github.com/baklai/win-cli/edit/main/src/:path',
-        text: 'Відредагувати цю сторінку на GitHub'
+        text: 'Відредагувати сторінку на GitHub'
       },
 
       search: {
@@ -116,9 +116,9 @@ export default withPwa(
     pwa: {
       includeAssets: ['favicon.ico'],
       manifest: {
-        name: 'WIN CLI • Windows command line interpreter',
+        name: 'WIN CLI • Переможець командного рядка',
         short_name: 'WINCLI',
-        description: 'Windows command line interpreter',
+        description: 'Переможець командного рядка',
         theme_color: '#ffffff',
         icons: [
           {
