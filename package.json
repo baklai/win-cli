@@ -28,7 +28,7 @@
     "dev": "vitepress --port 8080 dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "generate-pwa-assets": "pwa-assets-generator --preset minimal src/public/img/icon.png"
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/img/icon.png"
   },
   "devDependencies": {
     "@vite-pwa/assets-generator": "^0.0.4",

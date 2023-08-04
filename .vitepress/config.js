@@ -4,7 +4,6 @@ import { withPwa } from '@vite-pwa/vitepress';
 export default withPwa(
   defineConfig({
     base: '/',
-    srcDir: 'src',
     outDir: 'dist',
 
     appearance: true,
@@ -22,69 +21,61 @@ export default withPwa(
       ['link', { rel: 'stylesheet', href: '/css/style.css' }]
     ],
 
-    locales: {
-      root: {
-        lang: 'uk',
-        link: '/',
-        label: 'Українська',
-        themeConfig: {
-          sidebarMenuLabel: 'Меню',
-          returnToTopLabel: 'Повернутися до початку',
-          langMenuLabel: 'Змінити мову',
-          darkModeSwitchLabel: 'Зовнішній вигляд',
-          outlineTitle: 'На цій сторінці',
-          lastUpdatedText: 'Останнє оновлення',
-          notFound: {
-            title: 'СТОРІНКУ НЕ ЗНАЙДЕНО',
-            quote:
-              'Якщо ви не зміните свій напрямок і продовжите шукати, ви можете опинитися там, куди прямуєте.',
-            linkLabel: 'йти додому',
-            linkText: 'Повернитися на головну сторінку'
-          },
-          nav: [
-            { text: 'Документація', link: '/guide/introduction' },
-            { text: 'Приклади', link: '/examples/introduction' }
-          ],
-          sidebar: [
-            {
-              text: 'Початок',
-              items: [
-                { text: 'Вступ', link: '/guide/introduction' },
-                { text: 'Приклади', link: '/examples/introduction' },
-                { text: 'Швидкий старт', link: '/guide/quick-start' }
-              ]
-            },
-            {
-              text: 'Документація',
-              collapsed: false,
-              items: [
-                { text: 'Shutdown', link: '/guide/shutdown' },
-                { text: 'Reboot', link: '/guide/rebooting' },
-                { text: 'Proxy', link: '/guide/proxy' },
-                { text: 'Users', link: '/guide/user-management' }
-              ]
-            },
-            {
-              text: 'Приклади',
-              collapsed: true,
-              items: []
-            }
-          ],
-          footer: {
-            message: 'Ліцензія MIT',
-            copyright: `Всі права збережено © ${new Date().getFullYear()} Dmitrii Baklai`
-          },
-          docFooter: {
-            prev: 'Попередня сторінка',
-            next: 'Наступна сторінка'
-          }
-        }
-      }
-    },
-
     themeConfig: {
       logo: '/img/logo.png',
       siteTitle: false,
+
+      sidebarMenuLabel: 'Меню',
+      returnToTopLabel: 'Повернутися до початку',
+      langMenuLabel: 'Змінити мову',
+      darkModeSwitchLabel: 'Зовнішній вигляд',
+      outlineTitle: 'На цій сторінці',
+      lastUpdatedText: 'Останнє оновлення',
+
+      notFound: {
+        title: 'СТОРІНКУ НЕ ЗНАЙДЕНО',
+        quote:
+          'Якщо ви не зміните свій напрямок і продовжите шукати, ви можете опинитися там, куди прямуєте.',
+        linkLabel: 'йти додому',
+        linkText: 'Повернитися на головну сторінку'
+      },
+      nav: [
+        { text: 'Документація', link: '/guide/introduction' },
+        { text: 'Приклади', link: '/examples/introduction' }
+      ],
+      sidebar: [
+        {
+          text: 'Початок',
+          items: [
+            { text: 'Вступ', link: '/guide/introduction' },
+            { text: 'Приклади', link: '/examples/introduction' },
+            { text: 'Швидкий старт', link: '/guide/quick-start' }
+          ]
+        },
+        {
+          text: 'Документація',
+          collapsed: false,
+          items: [
+            { text: 'Shutdown', link: '/guide/shutdown' },
+            { text: 'Reboot', link: '/guide/rebooting' },
+            { text: 'Proxy', link: '/guide/proxy' },
+            { text: 'Users', link: '/guide/user-management' }
+          ]
+        },
+        {
+          text: 'Приклади',
+          collapsed: true,
+          items: []
+        }
+      ],
+      footer: {
+        message: 'Ліцензія MIT',
+        copyright: `Всі права збережено © ${new Date().getFullYear()} Dmitrii Baklai`
+      },
+      docFooter: {
+        prev: 'Попередня сторінка',
+        next: 'Наступна сторінка'
+      },
 
       editLink: {
         pattern: 'https://github.com/baklai/win-cli/edit/main/src/:path',
@@ -125,7 +116,7 @@ export default withPwa(
     },
 
     pwa: {
-      includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png', 'maskable-icon-512x512.png'],
+      includeAssets: ['favicon.ico'],
       manifest: {
         name: 'WIN:\\CLI • Переможець терміналу',
         short_name: 'WIN:\\CLI',
