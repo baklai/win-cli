@@ -28,8 +28,19 @@ export default withPwa(
         link: '/',
         label: 'Українська',
         themeConfig: {
+          sidebarMenuLabel: 'Меню',
+          returnToTopLabel: 'Повернутися до початку',
           langMenuLabel: 'Змінити мову',
+          darkModeSwitchLabel: 'Зовнішній вигляд',
           outlineTitle: 'На цій сторінці',
+          lastUpdatedText: 'Останнє оновлення',
+          notFound: {
+            title: 'СТОРІНКУ НЕ ЗНАЙДЕНО',
+            quote:
+              'Якщо ви не зміните свій напрямок і продовжите шукати, ви можете опинитися там, куди прямуєте.',
+            linkLabel: 'йти додому',
+            linkText: 'Повернитися на головну сторінку'
+          },
           nav: [
             { text: 'Документація', link: '/guide/introduction' },
             { text: 'Приклади', link: '/examples/introduction' }
