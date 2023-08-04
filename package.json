@@ -21,8 +21,8 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">18.16.0",
-    "npm": ">9.6.6"
+    "node": "v16.15.0",
+    "npm": "8.5.5"
   },
   "scripts": {
     "dev": "vitepress --port 8080 dev",
@@ -30,6 +30,7 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
+    "@vite-pwa/vitepress": "^0.2.0",
     "vitepress": "^1.0.0-beta.5"
   }
 }
