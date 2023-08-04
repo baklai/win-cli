@@ -6,6 +6,9 @@ hero:
   name: CLI Windows
   text: Windows command line interpreter
   tagline: Керівництво з оволодіння та використання можливостей командного рядка Windows
+  image:
+    src: /img/hero.png
+    alt: Windows command line
   actions:
     - theme: brand
       text: Розпочати з доків

@@ -17,3 +17,15 @@ a {
 a:hover {
   text-decoration: none !important;
 }
+
+.image-bg {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  border-radius: 50% !important;
+  width: 350px !important;
+  height: 200px !important;
+  filter: blur(200px) !important;
+  background-image: linear-gradient(90deg, #70707060 60%, #70707060) !important;
+  transform: translate(-50%, -50%) !important;
+}
