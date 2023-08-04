@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Переможець командного рядка
+title: Переможець терміналу
 
 hero:
   name: CLI Windows

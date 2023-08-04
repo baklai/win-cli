@@ -15,10 +15,10 @@ export default withPwa(
     lang: 'uk-UA',
     title: 'WIN:\\CLI',
     titleTemplate: 'WIN:\\CLI • :title',
-    description: 'Переможець командного рядка',
+    description: 'Переможець терміналу',
 
     head: [
-      ['meta', { property: 'og:title', content: 'WIN:\\CLI • Переможець командного рядка' }],
+      ['meta', { property: 'og:title', content: 'WIN:\\CLI • Переможець терміналу' }],
       ['link', { rel: 'stylesheet', href: '/css/style.css' }]
     ],
 
@@ -127,9 +127,9 @@ export default withPwa(
     pwa: {
       includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png', 'maskable-icon-512x512.png'],
       manifest: {
-        name: 'WIN:\\CLI • Переможець командного рядка',
+        name: 'WIN:\\CLI • Переможець терміналу',
         short_name: 'WIN:\\CLI',
-        description: 'Переможець командного рядка',
+        description: 'Переможець терміналу',
         theme_color: '#ffffff',
         icons: [
           {
