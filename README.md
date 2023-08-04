@@ -1,6 +1,6 @@
 # Windows command line interpreter
 
-<img src="/src/public/img/preview.png">
+<img src="/public/img/preview.png">
 
 ## Demo application -> [Windows cli service](https://win-cli.netlify.app/)
 
