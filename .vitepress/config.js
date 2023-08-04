@@ -4,7 +4,6 @@ import { withPwa } from '@vite-pwa/vitepress';
 export default withPwa(
   defineConfig({
     base: '/',
-    outDir: 'dist',
 
     appearance: true,
     cleanUrls: true,
