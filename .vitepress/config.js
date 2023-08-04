@@ -13,12 +13,12 @@ export default withPwa(
     i18nRouting: false,
 
     lang: 'uk-UA',
-    title: 'WINCLI',
-    titleTemplate: 'WINCLI • :title',
+    title: 'WIN:\\CLI',
+    titleTemplate: 'WIN:\\CLI • :title',
     description: 'Переможець командного рядка',
 
     head: [
-      ['meta', { property: 'og:title', content: 'WIN CLI • Переможець командного рядка' }],
+      ['meta', { property: 'og:title', content: 'WIN:\\CLI • Переможець командного рядка' }],
       ['link', { rel: 'stylesheet', href: '/css/style.css' }]
     ],
 
@@ -116,8 +116,8 @@ export default withPwa(
     pwa: {
       includeAssets: ['favicon.ico'],
       manifest: {
-        name: 'WIN CLI • Переможець командного рядка',
-        short_name: 'WINCLI',
+        name: 'WIN:\\CLI • Переможець командного рядка',
+        short_name: 'WIN:\\CLI',
         description: 'Переможець командного рядка',
         theme_color: '#ffffff',
         icons: [
