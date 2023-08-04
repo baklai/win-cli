@@ -125,7 +125,7 @@ export default withPwa(
     },
 
     pwa: {
-      includeAssets: ['favicon.ico'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png', 'maskable-icon-512x512.png'],
       manifest: {
         name: 'WIN:\\CLI • Переможець командного рядка',
         short_name: 'WIN:\\CLI',
