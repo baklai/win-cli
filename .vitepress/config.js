@@ -9,15 +9,16 @@ export default withPwa(
 
     appearance: true,
     cleanUrls: true,
+    lastUpdated: true,
     i18nRouting: false,
 
     lang: 'uk-UA',
     title: 'WINCLI',
     titleTemplate: 'WINCLI • :title',
-    description: 'Хаб технічної підтримки',
+    description: 'Windows command line interpreter',
 
     head: [
-      ['meta', { property: 'og:title', content: 'WIN CLI • Хаб технічної підтримки' }],
+      ['meta', { property: 'og:title', content: 'WIN CLI • Windows command line interpreter' }],
       ['link', { rel: 'stylesheet', href: '/css/style.css' }]
     ],
 
@@ -70,8 +71,6 @@ export default withPwa(
       }
     },
 
-    lastUpdated: true,
-
     themeConfig: {
       logo: '/img/logo.png',
       siteTitle: false,
@@ -115,20 +114,20 @@ export default withPwa(
     },
 
     pwa: {
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      includeAssets: ['favicon.ico'],
       manifest: {
-        name: 'WIN CLI • Хаб технічної підтримки',
+        name: 'WIN CLI • Windows command line interpreter',
         short_name: 'WINCLI',
-        description: 'Хаб технічної підтримки',
+        description: 'Windows command line interpreter',
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'pwa-192x192.png',
+            src: '/img/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'pwa-512x512.png',
+            src: '/img/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           }
