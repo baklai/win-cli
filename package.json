@@ -27,7 +27,7 @@
     "npm": "8.5.5"
   },
   "scripts": {
-    "dev": "vitepress --port 8080 dev",
+    "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/img/icon.png"
