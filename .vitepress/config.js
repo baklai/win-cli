@@ -32,8 +32,7 @@ export default withPwa(
 
     head: [
       ['meta', { property: 'og:title', content: 'WIN:\\CLI • Переможець терміналу' }],
-      ['link', { rel: 'icon', href: '/favicon.ico' }],
-      ['link', { rel: 'stylesheet', href: '/css/style.css' }]
+      ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
 
     themeConfig: {
