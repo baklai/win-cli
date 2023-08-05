@@ -1,6 +1,15 @@
 import { defineConfig } from 'vitepress';
 import { withPwa } from '@vite-pwa/vitepress';
 
+const sideBarDefault = {
+  text: 'Початок',
+  items: [
+    { text: 'Вступ', link: '/guide/' },
+    { text: 'Приклади', link: '/examples/' },
+    { text: 'Швидкий старт', link: '/guide/quick-start' }
+  ]
+};
+
 export default withPwa(
   defineConfig({
     base: '/',
@@ -8,7 +17,6 @@ export default withPwa(
     appearance: true,
     cleanUrls: true,
     lastUpdated: true,
-    i18nRouting: false,
 
     lang: 'uk-UA',
     title: 'WIN:\\CLI',
@@ -17,101 +25,124 @@ export default withPwa(
 
     head: [
       ['meta', { property: 'og:title', content: 'WIN:\\CLI • Переможець терміналу' }],
+      ['link', { rel: 'icon', href: '/favicon.ico' }],
       ['link', { rel: 'stylesheet', href: '/css/style.css' }]
     ],
 
     themeConfig: {
-      logo: '/img/logo.png',
+      logo: { src: '/img/logo.png', alt: 'WIN:\\CLI' },
       siteTitle: false,
-
-      sidebarMenuLabel: 'Меню',
-      returnToTopLabel: 'Повернутися до початку',
-      langMenuLabel: 'Змінити мову',
-      darkModeSwitchLabel: 'Зовнішній вигляд',
+      outline: 2,
       outlineTitle: 'На цій сторінці',
+      nav: [
+        { text: 'Документація', link: '/guide/' },
+        { text: 'Приклади', link: '/examples/' }
+      ],
+
+      sidebar: {
+        '/guide/': [
+          sideBarDefault,
+          {
+            text: 'Документація',
+            collapsed: false,
+            items: [
+              { text: 'Shutdown', link: '/guide/shutdown' },
+              { text: 'Reboot', link: '/guide/rebooting' },
+              { text: 'Proxy', link: '/guide/proxy' },
+              { text: 'Users', link: '/guide/user-management' }
+            ]
+          }
+        ],
+        '/examples/': [
+          sideBarDefault,
+          {
+            text: 'Приклади',
+            collapsed: true
+          }
+        ]
+      },
+
+      aside: true,
+
+      editLink: {
+        pattern: 'https://github.com/baklai/win-cli/edit/main/:path',
+        text: 'Редагувати цю сторінку на GitHub'
+      },
+
       lastUpdatedText: 'Останнє оновлення',
 
-      notFound: {
-        title: 'СТОРІНКУ НЕ ЗНАЙДЕНО',
-        quote:
-          'Якщо ви не зміните свій напрямок і продовжите шукати, ви можете опинитися там, куди прямуєте.',
-        linkLabel: 'йти додому',
-        linkText: 'Повернитися на головну сторінку'
+      lastUpdated: {
+        text: 'Останнє оновлення',
+        formatOptions: { dateStyle: 'short' }
       },
-      nav: [
-        { text: 'Документація', link: '/guide/introduction' },
-        { text: 'Приклади', link: '/examples/introduction' }
-      ],
-      sidebar: [
-        {
-          text: 'Початок',
-          items: [
-            { text: 'Вступ', link: '/guide/introduction' },
-            { text: 'Приклади', link: '/examples/introduction' },
-            { text: 'Швидкий старт', link: '/guide/quick-start' }
-          ]
-        },
-        {
-          text: 'Документація',
-          collapsed: false,
-          items: [
-            { text: 'Shutdown', link: '/guide/shutdown' },
-            { text: 'Reboot', link: '/guide/rebooting' },
-            { text: 'Proxy', link: '/guide/proxy' },
-            { text: 'Users', link: '/guide/user-management' }
-          ]
-        },
-        {
-          text: 'Приклади',
-          collapsed: true,
-          items: []
-        }
-      ],
-      footer: {
-        message: 'Ліцензія MIT',
-        copyright: `Всі права збережено © ${new Date().getFullYear()} Dmitrii Baklai`
-      },
+
       docFooter: {
         prev: 'Попередня сторінка',
         next: 'Наступна сторінка'
       },
 
-      editLink: {
-        pattern: 'https://github.com/baklai/win-cli/edit/main/:path',
-        text: 'Відредагувати сторінку на GitHub'
+      socialLinks: [
+        { icon: 'github', link: 'https://github.com/baklai' },
+        {
+          icon: 'linkedin',
+          link: 'https://www.linkedin.com/in/baklai/'
+        },
+        { icon: 'twitter', link: 'https://twitter.com/baklaiDi' },
+        { icon: 'facebook', link: 'https://www.facebook.com/dmitrii.baklai' },
+        { icon: 'instagram', link: 'https://www.instagram.com/baklai.di/' }
+      ],
+
+      footer: {
+        message: 'Ліцензія <a href="https://github.com/baklai/win-cli/blob/main/LICENSE">MIT</a>',
+        copyright: `Всі права збережено © 2022-${new Date().getFullYear()} <a href="https://github.com/baklai">Dmitrii Baklai</a>`
       },
+
+      darkModeSwitchLabel: 'Зовнішній вигляд',
+
+      sidebarMenuLabel: 'Меню',
+
+      returnToTopLabel: 'Повернутися до початку',
+
+      langMenuLabel: 'Змінити мову',
 
       search: {
         provider: 'local',
         options: {
-          locales: {
-            root: {
-              translations: {
-                button: {
-                  buttonText: 'Пошук',
-                  buttonAriaLabel: 'Показати детальний список'
-                },
-                modal: {
-                  noResultsText: 'Немає результатів для',
-                  resetButtonTitle: 'Скинути пошук',
-                  footer: {
-                    selectText: 'вибрати',
-                    navigateText: 'для навігації'
-                  }
-                }
+          disableDetailedView: false,
+          disableQueryPersistence: false,
+
+          translations: {
+            button: {
+              buttonText: 'Пошук',
+              buttonAriaLabel: 'Показати детальний список'
+            },
+            modal: {
+              displayDetails: 'Показати детальний список',
+              resetButtonTitle: 'Скинути пошук',
+              backButtonTitle: 'Закрити пошук',
+              noResultsText: 'Немає результатів для',
+
+              footer: {
+                selectText: 'вибрати',
+                navigateText: 'для навігації',
+                closeText: 'закрити'
               }
             }
           }
         }
       },
 
-      socialLinks: [
-        {
-          icon: 'linkedin',
-          link: 'https://www.linkedin.com/in/dmitrii-baklai-1370a3170/'
-        },
-        { icon: 'github', link: 'https://github.com/baklai' }
-      ]
+      i18nRouting: false,
+
+      externalLinkIcon: false
+    },
+
+    notFound: {
+      title: 'СТОРІНКУ НЕ ЗНАЙДЕНО',
+      quote:
+        'Якщо ви не зміните свій напрямок і продовжите шукати, ви можете опинитися там, куди прямуєте.',
+      linkLabel: 'йти додому',
+      linkText: 'Повернитися на головну сторінку'
     },
 
     pwa: {
@@ -134,6 +165,8 @@ export default withPwa(
           }
         ]
       }
-    }
+    },
+
+    srcExclude: ['**/README.md']
   })
 );

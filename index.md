@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Розпочати з доків
-      link: /guide/introduction.md
+      link: /guide/
     - theme: alt
       text: Приклади
-      link: /examples/introduction.md
+      link: /examples/
 
 features:
   - icon: 📑

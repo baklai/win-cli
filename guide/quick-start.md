@@ -1,6 +1,8 @@
 ---
 title: CMD Windows
 description: Інтерпретатор командного рядка для операційних систем OS/2 та Windows CE
+prev: false
+next: false
 ---
 
 # Інтерпретатор командного рядка для операційних систем OS/2 та Windows CE

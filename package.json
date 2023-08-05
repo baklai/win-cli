@@ -17,7 +17,9 @@
   },
   "keywords": [
     "vue.js",
-    "vitepress"
+    "vitepress",
+    "windows",
+    "cmd"
   ],
   "license": "MIT",
   "engines": {

@@ -1,6 +1,8 @@
 ---
 title: Вступ
 description: 'Інтерпретатор командної строки для операційних систем OS/2, Windows CE'
+prev: false
+next: false
 ---
 
 <script setup>
