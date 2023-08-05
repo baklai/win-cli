@@ -1,5 +1,7 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig, loadEnv } from 'vitepress';
 import { withPwa } from '@vite-pwa/vitepress';
+
+const ENV = loadEnv('', process.cwd());
 
 const sideBarDefault = {
   text: 'Початок',
@@ -18,6 +20,11 @@ export default withPwa(
     cleanUrls: true,
     lastUpdated: true,
 
+    sitemap: {
+      hostname: ENV?.HOST_NAME,
+      lastmodDateOnly: false
+    },
+
     lang: 'uk-UA',
     title: 'WIN:\\CLI',
     titleTemplate: 'WIN:\\CLI • :title',
@@ -31,9 +38,12 @@ export default withPwa(
 
     themeConfig: {
       logo: { src: '/img/logo.png', alt: 'WIN:\\CLI' },
+
       siteTitle: false,
+
       outline: 2,
       outlineTitle: 'На цій сторінці',
+
       nav: [
         { text: 'Документація', link: '/guide/' },
         { text: 'Приклади', link: '/examples/' }
@@ -135,14 +145,6 @@ export default withPwa(
       i18nRouting: false,
 
       externalLinkIcon: false
-    },
-
-    notFound: {
-      title: 'СТОРІНКУ НЕ ЗНАЙДЕНО',
-      quote:
-        'Якщо ви не зміните свій напрямок і продовжите шукати, ви можете опинитися там, куди прямуєте.',
-      linkLabel: 'йти додому',
-      linkText: 'Повернитися на головну сторінку'
     },
 
     pwa: {

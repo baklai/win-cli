@@ -26,6 +26,13 @@ This will create the `dist/` directory for publishing to static hosting:
 npm run build
 ```
 
+## Project variables
+
+| Key                    | Comment                                                        |
+| ---------------------- | -------------------------------------------------------------- |
+| `HOST_NAME`            | Hostname for sitemap generation                                |
+| ---------------------- | -------------------------------------------------------------- |
+
 To preview the static generated app, run `npm run preview`
 
 For detailed explanation on how things work, checkout [vitepress](https://vitepress.dev/).
