@@ -35,6 +35,6 @@
   "devDependencies": {
     "@vite-pwa/assets-generator": "^0.0.4",
     "@vite-pwa/vitepress": "^0.2.0",
-    "vitepress": "^1.0.0-beta.5"
+    "vitepress": "^1.0.0-beta.7"
   }
 }

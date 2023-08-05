@@ -1,9 +1,4 @@
 import DefaultTheme from 'vitepress/theme';
-import NotFound from './components/NotFound.vue';
+import './styles/style.css';
 
-import './css/style.css';
-
-export default {
-  ...DefaultTheme,
-  Layout: NotFound
-};
+export default DefaultTheme;
