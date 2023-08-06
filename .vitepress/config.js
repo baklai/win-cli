@@ -75,10 +75,9 @@ export default withPwa(
             text: 'Документація',
             collapsed: false,
             items: [
-              { text: 'Shutdown', link: '/guide/shutdown' },
-              { text: 'Reboot', link: '/guide/rebooting' },
-              { text: 'Proxy', link: '/guide/proxy' },
-              { text: 'Users', link: '/guide/user-management' }
+              { text: 'Вимкнення та перезавантаження', link: '/guide/shutdown' },
+              { text: 'Налаштування проксі-серверу', link: '/guide/netsh-winhttp' },
+              { text: 'Управління користувачами', link: '/guide/net-user' }
             ]
           }
         ],
