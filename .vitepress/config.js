@@ -15,6 +15,7 @@ const sideBarDefault = {
 export default withPwa(
   defineConfig({
     base: '/',
+    srcDir: './src',
 
     appearance: true,
     cleanUrls: true,
@@ -147,6 +148,7 @@ export default withPwa(
     },
 
     pwa: {
+      outDir: '../.vitepress/dist',
       includeAssets: ['favicon.ico'],
       manifest: {
         name: 'WIN:\\CLI • Переможець терміналу',

@@ -1,5 +1,6 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme';
+import { withBase } from 'vitepress';
 
 const { Layout } = DefaultTheme;
 </script>
@@ -17,7 +18,7 @@ const { Layout } = DefaultTheme;
         </blockquote>
 
         <div class="action">
-          <a class="link" href="/" aria-label="йти додому"> На головну сторінку </a>
+          <a class="link" :href="withBase('/')" aria-label="йти додому"> На головну сторінку </a>
         </div>
       </div>
     </template>
