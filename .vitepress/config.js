@@ -40,7 +40,19 @@ export default withPwa(
           content: 'Керівництво з використання можливостей командного рядка Windows'
         }
       ],
-      ['link', { rel: 'icon', href: '/favicon.ico' }]
+      ['link', { rel: 'icon', href: '/favicon.ico' }],
+      [
+        'script',
+        {
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-DY9ZDGJ84E'
+        }
+      ],
+      [
+        'script',
+        {},
+        "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-DY9ZDGJ84E');"
+      ]
     ],
 
     themeConfig: {
