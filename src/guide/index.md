@@ -8,7 +8,7 @@ next: false
 <script setup>
 import { useData } from 'vitepress'
 
-const  {isDark}  = useData();
+const  { isDark }  = useData();
 </script>
 
 <img src="/img/preview-dark.png" width="1280" height="640" alt="Preview image" v-if="isDark"/>
@@ -19,7 +19,7 @@ const  {isDark}  = useData();
 </div>
 
 ::: info ℹ️ Документація
-Посилання на повну документацію від [Microsoft Docs for cmd](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmd 'Microsoft Dosc').
+Посилання на документацію від [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmd 'Microsoft Dosc').
 :::
 
 ## Параметри
