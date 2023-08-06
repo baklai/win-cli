@@ -91,7 +91,7 @@ export default withPwa(
       aside: true,
 
       editLink: {
-        pattern: 'https://github.com/baklai/win-cli/edit/main/src:path',
+        pattern: 'https://github.com/baklai/win-cli/edit/main/src/:path',
         text: 'Редагувати цю сторінку на GitHub'
       },
 
