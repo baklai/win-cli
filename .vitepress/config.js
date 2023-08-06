@@ -3,13 +3,28 @@ import { withPwa } from '@vite-pwa/vitepress';
 
 const ENV = loadEnv('', process.cwd());
 
-const sideBarDefault = {
+const SIDEBAR_DEFAULT = {
   text: 'Початок',
   items: [
     { text: 'Вступ', link: '/guide/' },
     { text: 'Приклади', link: '/examples/' },
     { text: 'Швидкий старт', link: '/guide/quick-start' }
   ]
+};
+
+const SIDEBAR_QUIDE = {
+  text: 'Документація',
+  collapsed: false,
+  items: [
+    { text: 'Вимкнення та перезавантаження', link: '/guide/shutdown' },
+    { text: 'Налаштування проксі-серверу', link: '/guide/netsh-winhttp' },
+    { text: 'Управління користувачами', link: '/guide/net-user' }
+  ]
+};
+
+const SIDEBAR_EXAMPLES = {
+  text: 'Приклади',
+  collapsed: true
 };
 
 export default withPwa(
@@ -69,25 +84,8 @@ export default withPwa(
       ],
 
       sidebar: {
-        '/guide/': [
-          sideBarDefault,
-          {
-            text: 'Документація',
-            collapsed: false,
-            items: [
-              { text: 'Вимкнення та перезавантаження', link: '/guide/shutdown' },
-              { text: 'Налаштування проксі-серверу', link: '/guide/netsh-winhttp' },
-              { text: 'Управління користувачами', link: '/guide/net-user' }
-            ]
-          }
-        ],
-        '/examples/': [
-          sideBarDefault,
-          {
-            text: 'Приклади',
-            collapsed: true
-          }
-        ]
+        '/guide/': [SIDEBAR_DEFAULT, SIDEBAR_QUIDE],
+        '/examples/': [SIDEBAR_DEFAULT, SIDEBAR_EXAMPLES]
       },
 
       aside: true,
