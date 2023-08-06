@@ -33,6 +33,13 @@ export default withPwa(
 
     head: [
       ['meta', { property: 'og:title', content: 'WIN:\\CLI • Переможець терміналу' }],
+      [
+        'meta',
+        {
+          property: 'og:description',
+          content: 'Керівництво з використання можливостей командного рядка Windows'
+        }
+      ],
       ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
 
@@ -147,6 +154,8 @@ export default withPwa(
       externalLinkIcon: false
     },
 
+    srcExclude: ['**/README.md'],
+
     pwa: {
       outDir: '../.vitepress/dist',
       includeAssets: ['favicon.ico'],
@@ -168,8 +177,6 @@ export default withPwa(
           }
         ]
       }
-    },
-
-    srcExclude: ['**/README.md']
+    }
   })
 );
