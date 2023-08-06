@@ -10,7 +10,7 @@ description: Налаштування проксі-сервера
 
 ### Тунелювати весь інтернет-трафік через проксі
 
-```
+```cmd
 netsh winhttp set proxy proxy-server="http://proxy:port" bypass-list="127.0.0.1;localhost"
 ```
 
@@ -19,12 +19,12 @@ netsh winhttp set proxy proxy-server="http://proxy:port" bypass-list="127.0.0.1;
 
 ### Переглянути поточні налаштування проксі
 
-```
+```cmd
 netsh winhttp show proxy
 ```
 
 ### Скинути всі налаштування проксі
 
-```
+```cmd
 netsh winhttp reset proxy
 ```
