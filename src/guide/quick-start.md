@@ -1,11 +1,11 @@
 ---
-title: CMD Windows
+title: CMD Швидкий старт
 description: Інтерпретатор командного рядка для операційних систем OS/2 та Windows CE
-prev: false
-next: false
 ---
 
-# Інтерпретатор командного рядка для операційних систем OS/2 та Windows CE
+# Швидкий старт
+
+Розглянемо деякі основні способи запуску командного рядку та виконаємо першу команду.
 
 ::: info ℹ️ Документація
 Посилання на документацію від [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmd 'Microsoft Dosc').
@@ -49,10 +49,6 @@ next: false
 ## Перша команда
 
 Введіть у термінал командний рядок **[ver](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ver 'Microsoft Dosc')**, щоб отримати версію операційної системи:
-
-::: info ℹ️ Документація
-Посилання на документацію від [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ver 'Microsoft Dosc').
-:::
 
 ```cmd
 Microsoft Windows [Version 10.0.19044.1766]

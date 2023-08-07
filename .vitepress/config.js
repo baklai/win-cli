@@ -3,29 +3,126 @@ import { withPwa } from '@vite-pwa/vitepress';
 
 const ENV = loadEnv('', process.cwd());
 
-const SIDEBAR_DEFAULT = {
-  text: 'Початок',
-  items: [
-    { text: 'Вступ', link: '/guide/' },
-    { text: 'Приклади', link: '/examples/' },
-    { text: 'Швидкий старт', link: '/guide/quick-start' }
-  ]
-};
+const SIDEBAR_QUIDE = [
+  {
+    items: [
+      { text: 'Вступ', link: '/guide/' },
+      { text: 'Основні поняття', link: '/guide/basic-concepts' },
+      { text: 'Швидкий старт', link: '/guide/quick-start' }
+    ]
+  },
 
-const SIDEBAR_QUIDE = {
-  text: 'Документація',
-  collapsed: false,
-  items: [
-    { text: 'Вимкнення та перезавантаження', link: '/guide/shutdown' },
-    { text: 'Налаштування проксі-серверу', link: '/guide/netsh-winhttp' },
-    { text: 'Управління користувачами', link: '/guide/net-user' }
-  ]
-};
+  {
+    text: 'Основні команди',
+    collapsed: false,
+    items: [
+      {
+        text: 'Робота з каталогами та переміщення між ними',
+        link: '/guide/commands/cd'
+      },
+      {
+        text: 'Виведення списку файлів та папок в поточному каталозі',
+        link: '/guide/commands/dir'
+      },
+      {
+        text: 'Створення та видалення каталогів',
+        link: '/guide/commands/mkdir-and-rmdir'
+      },
 
-const SIDEBAR_EXAMPLES = {
-  text: 'Приклади',
-  collapsed: true
-};
+      {
+        text: 'Копіювання та переміщення файлів',
+        link: '/guide/commands/copy-and-move'
+      },
+      { text: 'Видалення файлів', link: '/guide/commands/del' },
+      { text: 'Очищення екрану консолі', link: '/guide/commands/cls' }
+    ]
+  },
+
+  {
+    text: 'Робота з файлами і текстом',
+    collapsed: false,
+    items: [
+      { text: 'Виведення повідомлень у консоль', link: '/guide/commands/echo' },
+      { text: 'Виведення вмісту текстових файлів', link: '/guide/commands/type' },
+      {
+        text: 'Пошук тексту у файлі',
+        link: '/guide/commands/find-and-findstr'
+      },
+      {
+        text: 'Посторінкове відображення текстових файлів',
+        link: '/guide/commands/more-and-less'
+      }
+    ]
+  },
+
+  {
+    text: 'Адміністративні команди',
+    collapsed: false,
+    items: [
+      { text: 'Управління користувачами', link: '/guide/commands/net-user' },
+      { text: 'Мережеві налаштування та інформація', link: '/guide/commands/net' },
+      { text: 'Налаштування проксі-серверу', link: '/guide/commands/netsh-winhttp' },
+      {
+        text: 'Список та закриття процесів',
+        link: '/guide/commands/tasklist-and-taskkill'
+      },
+      {
+        text: 'Перевірка та відновлення цілісності файлової системи',
+        link: '/guide/commands/chkdsk'
+      },
+      { text: 'Перевірка цілісності системних файлів', link: '/guide/commands/sfc' }
+    ]
+  },
+
+  {
+    text: 'Робота з даними та дисками',
+    collapsed: false,
+    items: [
+      { text: 'Керування дисками та розділами', link: '/guide/commands/diskpart' },
+      { text: 'Форматування дисків', link: '/guide/commands/format' },
+      {
+        text: 'Розширені опції копіювання файлів та папок',
+        link: '/guide/commands/xcopy-and-robocopy'
+      },
+      { text: 'Зміна атрибутів файлів та папок', link: '/guide/commands/attrib' }
+    ]
+  },
+  {
+    text: 'Системні інструменти',
+    collapsed: false,
+    items: [
+      {
+        text: 'Виведення інформації про систему',
+        link: '/guide/commands/systeminfo'
+      },
+      {
+        text: 'Вимкнення та перезавантаження системи',
+        link: '/guide/commands/shutdown'
+      },
+      { text: 'Оновлення групових політик', link: '/guide/commands/gpupdate' },
+      { text: 'Робота з реєстром системи', link: '/guide/commands/regedit' }
+    ]
+  },
+
+  {
+    text: 'Скрипти та автоматизація',
+    collapsed: false,
+    items: []
+  },
+  {
+    text: 'Поради та підказки',
+    collapsed: false,
+    items: []
+  }
+];
+
+const SIDEBAR_EXAMPLES = [
+  {
+    text: 'Приклади',
+    collapsed: true,
+    items: []
+  }
+];
 
 export default withPwa(
   defineConfig({
@@ -84,8 +181,8 @@ export default withPwa(
       ],
 
       sidebar: {
-        '/guide/': [SIDEBAR_DEFAULT, SIDEBAR_QUIDE],
-        '/examples/': [SIDEBAR_DEFAULT, SIDEBAR_EXAMPLES]
+        '/guide/': SIDEBAR_QUIDE,
+        '/examples/': SIDEBAR_EXAMPLES
       },
 
       aside: true,
