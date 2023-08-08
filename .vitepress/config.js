@@ -105,6 +105,7 @@ const SIDEBAR_QUIDE = [
       { text: 'Зміна атрибутів файлів та папок', link: '/guide/commands/attrib' }
     ]
   },
+
   {
     text: 'Системні інструменти',
     collapsed: false,
@@ -116,28 +117,16 @@ const SIDEBAR_QUIDE = [
       {
         text: 'Вимкнення та перезавантаження системи',
         link: '/guide/commands/shutdown'
-      },
-      { text: 'Оновлення групових політик', link: '/guide/commands/gpupdate' },
-      { text: 'Робота з реєстром системи', link: '/guide/commands/regedit' }
+      }
     ]
-  },
-
-  {
-    text: 'Скрипти та автоматизація',
-    collapsed: false,
-    items: []
-  },
-  {
-    text: 'Поради та підказки',
-    collapsed: false,
-    items: []
   }
 ];
 
 const SIDEBAR_EXAMPLES = [
+  { text: 'Приклади', link: '/examples/' },
+
   {
-    text: 'Приклади',
-    collapsed: true,
+    text: 'Скрипти та автоматизація',
     items: []
   }
 ];
