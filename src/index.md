@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Переможець терміналу
+description: Керівництво з використання можливостей командного рядка Windows
 
 hero:
   name: CLI Windows
