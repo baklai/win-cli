@@ -151,6 +151,9 @@ export default withPwa(
     description: 'Переможець терміналу',
 
     head: [
+      ['meta', { property: 'name', content: 'Dmitrii Baklai' }],
+      ['meta', { property: 'keywords', content: 'windows, cmd, bat' }],
+      ['meta', { property: 'language', content: 'uk-UA' }],
       ['meta', { property: 'og:title', content: 'WIN:\\CLI • Переможець терміналу' }],
       [
         'meta',
@@ -159,7 +162,17 @@ export default withPwa(
           content: 'Керівництво з використання можливостей командного рядка Windows'
         }
       ],
+      ['meta', { property: 'og:url', content: `${ENV?.HOST_NAME ? ENV?.HOST_NAME : '/'}` }],
+      ['meta', { property: 'og:type', content: 'article' }],
+      ['meta', { property: 'og:site_name', content: 'WIN:\\CLI • Переможець терміналу' }],
+      ['meta', { property: 'og:image', content: `${ENV?.HOST_NAME}/img/icon.png` }],
+      ['meta', { property: 'og:image:width', content: '512' }],
+      ['meta', { property: 'og:image:height', content: '512' }],
+      ['meta', { property: 'og:keywords', content: 'windows, cmd, bat' }],
+      ['meta', { property: 'og:locale', content: 'uk-UA' }],
+
       ['link', { rel: 'icon', href: '/favicon.ico' }],
+
       [
         'script',
         {
