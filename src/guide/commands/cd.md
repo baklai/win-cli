@@ -27,40 +27,40 @@ cd [шлях]
 
 1. Перехід до абсолютного шляху:
 
-   ```cmd
-   cd C:\Users\Username\Documents
-   ```
+```cmd
+cd C:\Users\Username\Documents
+```
 
 2. Перехід до відносного шляху (вищий каталог):
 
-   ```cmd
-   cd ..
-   ```
+```cmd
+cd ..
+```
 
 3. Перехід до відносного шляху (підкаталог):
 
-   ```cmd
-   cd Projects\ProjectName
-   ```
+```cmd
+cd Projects\ProjectName
+```
 
 4. Перехід до домашнього каталогу користувача:
 
-   ```cmd
-   cd %USERPROFILE%
-   ```
+```cmd
+cd %USERPROFILE%
+```
 
 5. Використання або відображення змінної середовища `CD` для перейменування каталогу:
 
-   ```cmd
-   set CD=C:\Users\Username\Documents
-   cd %CD%
-   ```
+```cmd
+set CD=C:\Users\Username\Documents
+cd %CD%
+```
 
 6. Перехід на інший диск:
 
-   ```cmd
-   cd /D D:\Documents
-   ```
+```cmd
+cd /D D:\Documents
+```
 
 ## Примітка
 

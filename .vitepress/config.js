@@ -25,13 +25,24 @@ const SIDEBAR_QUIDE = [
         link: '/guide/commands/dir'
       },
       {
-        text: 'Створення та видалення каталогів',
-        link: '/guide/commands/mkdir-and-rmdir'
+        text: 'Створення каталогів',
+        link: '/guide/commands/mkdir'
       },
-
       {
-        text: 'Копіювання та переміщення файлів',
-        link: '/guide/commands/copy-and-move'
+        text: 'Видалення каталогів',
+        link: '/guide/commands/rmdir'
+      },
+      {
+        text: 'Перейменування файлів та папок',
+        link: '/guide/commands/rename'
+      },
+      {
+        text: 'Копіювання файлів',
+        link: '/guide/commands/copy'
+      },
+      {
+        text: 'Переміщення файлів',
+        link: '/guide/commands/move'
       },
       { text: 'Видалення файлів', link: '/guide/commands/del' },
       { text: 'Очищення екрану консолі', link: '/guide/commands/cls' }
@@ -46,11 +57,15 @@ const SIDEBAR_QUIDE = [
       { text: 'Виведення вмісту текстових файлів', link: '/guide/commands/type' },
       {
         text: 'Пошук тексту у файлі',
-        link: '/guide/commands/find-and-findstr'
+        link: '/guide/commands/find'
+      },
+      {
+        text: 'Розширений пошук тексту в файлі',
+        link: '/guide/commands/findstr'
       },
       {
         text: 'Посторінкове відображення текстових файлів',
-        link: '/guide/commands/more-and-less'
+        link: '/guide/commands/more'
       }
     ]
   },
@@ -59,12 +74,19 @@ const SIDEBAR_QUIDE = [
     text: 'Адміністративні команди',
     collapsed: false,
     items: [
+      { text: 'Інформація про мережу', link: '/guide/commands/ipconfig' },
+      { text: 'Стан мережевих підключень', link: '/guide/commands/netstat' },
       { text: 'Управління користувачами', link: '/guide/commands/net-user' },
+      { text: 'Управління локальними групами', link: '/guide/commands/net-localgroup' },
       { text: 'Мережеві налаштування та інформація', link: '/guide/commands/net' },
       { text: 'Налаштування проксі-серверу', link: '/guide/commands/netsh-winhttp' },
       {
-        text: 'Список та закриття процесів',
-        link: '/guide/commands/tasklist-and-taskkill'
+        text: 'Список активних процесів',
+        link: '/guide/commands/tasklist'
+      },
+      {
+        text: 'Завершення процесів',
+        link: '/guide/commands/taskkill'
       },
       {
         text: 'Перевірка та відновлення цілісності файлової системи',
@@ -80,10 +102,6 @@ const SIDEBAR_QUIDE = [
     items: [
       { text: 'Керування дисками та розділами', link: '/guide/commands/diskpart' },
       { text: 'Форматування дисків', link: '/guide/commands/format' },
-      {
-        text: 'Розширені опції копіювання файлів та папок',
-        link: '/guide/commands/xcopy-and-robocopy'
-      },
       { text: 'Зміна атрибутів файлів та папок', link: '/guide/commands/attrib' }
     ]
   },
@@ -92,7 +110,7 @@ const SIDEBAR_QUIDE = [
     collapsed: false,
     items: [
       {
-        text: 'Виведення інформації про систему',
+        text: 'Інформація про систему',
         link: '/guide/commands/systeminfo'
       },
       {

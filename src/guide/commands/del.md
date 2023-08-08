@@ -21,12 +21,12 @@ del [шлях_до_файлу]
 
 1. Видалити файл:
 
-   ```cmd
-   del C:\Path\File.txt
-   ```
+```cmd
+del C:\Path\File.txt
+```
 
 2. Видалити кілька файлів:
 
-   ```cmd
-   del C:\Path\File1.txt C:\Path\File2.txt
-   ```
+```cmd
+del C:\Path\File1.txt C:\Path\File2.txt
+```
