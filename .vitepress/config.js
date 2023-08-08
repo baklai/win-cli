@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { withPwa } from '@vite-pwa/vitepress';
 
-const HOST_NAME = 'https://win-cli.netlify.app/';
+const HOST_NAME = 'https://win-cli.netlify.app';
 
 const SIDEBAR_QUIDE = [
   {
