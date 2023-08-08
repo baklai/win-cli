@@ -123,7 +123,7 @@ const SIDEBAR_QUIDE = [
 ];
 
 const SIDEBAR_EXAMPLES = [
-  { text: 'Приклади', link: '/examples/' },
+  { text: 'Вступ', link: '/examples/' },
 
   {
     text: 'Скрипти та автоматизація',
