@@ -174,6 +174,10 @@ export default withPwa(
       ]
     ],
 
+    markdown: {
+      lineNumbers: false
+    },
+
     themeConfig: {
       logo: { src: '/img/logo.png', alt: 'WIN:\\CLI' },
 
