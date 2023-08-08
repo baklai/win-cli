@@ -1,6 +1,5 @@
 [build.environment]
   NODE_VERSION = "16"
-  HOST_NAME = "https://win-cli.netlify.app/"
 
 [build]
   publish = ".vitepress/dist"

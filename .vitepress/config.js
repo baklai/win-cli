@@ -1,7 +1,7 @@
-import { defineConfig, loadEnv } from 'vitepress';
+import { defineConfig } from 'vitepress';
 import { withPwa } from '@vite-pwa/vitepress';
 
-const ENV = loadEnv('', process.cwd());
+const HOST_NAME = 'https://win-cli.netlify.app/';
 
 const SIDEBAR_QUIDE = [
   {
@@ -141,14 +141,14 @@ export default withPwa(
     lastUpdated: true,
 
     sitemap: {
-      hostname: ENV?.HOST_NAME,
+      hostname: HOST_NAME,
       lastmodDateOnly: false
     },
 
     lang: 'uk-UA',
     title: 'WIN:\\CLI',
     titleTemplate: 'WIN:\\CLI • :title',
-    description: 'Переможець терміналу',
+    description: 'Керівництво з використання можливостей командного рядка Windows',
 
     head: [
       ['meta', { property: 'name', content: 'Dmitrii Baklai' }],
@@ -162,10 +162,10 @@ export default withPwa(
           content: 'Керівництво з використання можливостей командного рядка Windows'
         }
       ],
-      ['meta', { property: 'og:url', content: `${ENV?.HOST_NAME ? ENV?.HOST_NAME : '/'}` }],
+      ['meta', { property: 'og:url', content: `${HOST_NAME ? HOST_NAME : '/'}` }],
       ['meta', { property: 'og:type', content: 'article' }],
       ['meta', { property: 'og:site_name', content: 'WIN:\\CLI • Переможець терміналу' }],
-      ['meta', { property: 'og:image', content: `${ENV?.HOST_NAME}/img/icon.png` }],
+      ['meta', { property: 'og:image', content: `${HOST_NAME}/img/icon.png` }],
       ['meta', { property: 'og:image:width', content: '512' }],
       ['meta', { property: 'og:image:height', content: '512' }],
       ['meta', { property: 'og:keywords', content: 'windows, cmd, bat' }],
