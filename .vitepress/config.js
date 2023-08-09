@@ -3,6 +3,18 @@ import { withPwa } from '@vite-pwa/vitepress';
 
 const HOST_NAME = 'https://win-cli.netlify.app';
 
+const NAVBAR = [
+  { text: 'Документація', link: '/guide/' },
+  { text: 'Приклади', link: '/examples/' },
+  {
+    text: 'Опції',
+    items: [
+      { text: 'Генератор', link: '/creator/' },
+      { text: 'Пісочниця', link: 'https://www.onworks.net/programs/terminal-online' }
+    ]
+  }
+];
+
 const SIDEBAR_QUIDE = [
   {
     items: [
@@ -199,17 +211,7 @@ export default withPwa(
       outline: 2,
       outlineTitle: 'На цій сторінці',
 
-      nav: [
-        { text: 'Документація', link: '/guide/' },
-        { text: 'Приклади', link: '/examples/' },
-        {
-          text: 'Опції',
-          items: [
-            { text: 'Генератор', link: '/creator/' },
-            { text: 'Пісочниця', link: 'https://www.onworks.net/programs/terminal-online' }
-          ]
-        }
-      ],
+      nav: NAVBAR,
 
       sidebar: {
         '/guide/': SIDEBAR_QUIDE,
