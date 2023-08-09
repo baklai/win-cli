@@ -201,7 +201,14 @@ export default withPwa(
 
       nav: [
         { text: 'Документація', link: '/guide/' },
-        { text: 'Приклади', link: '/examples/' }
+        { text: 'Приклади', link: '/examples/' },
+        {
+          text: 'Опції',
+          items: [
+            { text: 'Генератор', link: '/creator/' },
+            { text: 'Пісочниця', link: 'https://www.onworks.net/programs/terminal-online' }
+          ]
+        }
       ],
 
       sidebar: {
