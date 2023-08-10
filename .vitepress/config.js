@@ -62,10 +62,10 @@ const SIDEBAR_QUIDE = [
   },
 
   {
-    text: 'Робота з файлами і текстом',
+    text: 'Файли і текст',
     collapsed: false,
     items: [
-      { text: 'Виведення повідомлень у консоль', link: '/guide/commands/echo' },
+      { text: 'Виведення тексту', link: '/guide/commands/echo' },
       { text: 'Виведення вмісту текстових файлів', link: '/guide/commands/type' },
       {
         text: 'Пошук тексту у файлі',
