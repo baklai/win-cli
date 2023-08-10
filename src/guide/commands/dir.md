@@ -1,9 +1,9 @@
 ---
-title: Виведення списку файлів та папок в поточному каталозі
-description: dir • виведення списку файлів та папок в поточному каталозі
+title: Спискок файлів та папок
+description: dir • спискок файлів та папок
 ---
 
-# Виведення списку файлів та папок
+# Спискок файлів та папок
 
 Команда **[dir](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/dir 'Microsoft Dosc')** виводить список файлів і папок у поточному каталозі.
 

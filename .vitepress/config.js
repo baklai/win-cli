@@ -29,11 +29,11 @@ const SIDEBAR_QUIDE = [
     collapsed: false,
     items: [
       {
-        text: 'Робота з каталогами та переміщення між ними',
+        text: 'Робота з каталогами',
         link: '/guide/commands/cd'
       },
       {
-        text: 'Виведення списку файлів та папок в поточному каталозі',
+        text: 'Спискок файлів та папок',
         link: '/guide/commands/dir'
       },
       {
@@ -57,7 +57,7 @@ const SIDEBAR_QUIDE = [
         link: '/guide/commands/move'
       },
       { text: 'Видалення файлів', link: '/guide/commands/del' },
-      { text: 'Очищення екрану консолі', link: '/guide/commands/cls' }
+      { text: 'Очищення командного рядка', link: '/guide/commands/cls' }
     ]
   },
 
