@@ -166,7 +166,7 @@ export default withPwa(
       ['meta', { property: 'name', content: 'Dmitrii Baklai' }],
       ['meta', { property: 'keywords', content: 'windows, cmd, bat' }],
       ['meta', { property: 'language', content: 'uk-UA' }],
-      ['meta', { property: 'og:title', content: 'WIN:\\CLI • Переможець терміналу' }],
+      ['meta', { property: 'og:title', content: 'WIN:\\CLI • Інтерпретатор командного рядка' }],
       [
         'meta',
         {
@@ -176,7 +176,7 @@ export default withPwa(
       ],
       ['meta', { property: 'og:url', content: `${HOST_NAME ? HOST_NAME : '/'}` }],
       ['meta', { property: 'og:type', content: 'article' }],
-      ['meta', { property: 'og:site_name', content: 'WIN:\\CLI • Переможець терміналу' }],
+      ['meta', { property: 'og:site_name', content: 'WIN:\\CLI • Інтерпретатор командного рядка' }],
       ['meta', { property: 'og:image', content: `${HOST_NAME}/img/icon.png` }],
       ['meta', { property: 'og:image:width', content: '512' }],
       ['meta', { property: 'og:image:height', content: '512' }],
@@ -308,9 +308,9 @@ export default withPwa(
       outDir: '../.vitepress/dist',
       includeAssets: ['favicon.ico'],
       manifest: {
-        name: 'WIN:\\CLI • Переможець терміналу',
+        name: 'WIN:\\CLI • Інтерпретатор командного рядка',
         short_name: 'WIN:\\CLI',
-        description: 'Переможець терміналу',
+        description: 'Інтерпретатор командного рядка',
         theme_color: '#ffffff',
         icons: [
           {
