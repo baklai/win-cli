@@ -1,8 +1,11 @@
-import DefaultTheme from 'vitepress/theme';
-import Layout from './components/Layout.vue';
-import './styles/style.css';
+import { h } from 'vue';
+import Theme from 'vitepress/theme';
+import './style.css';
 
 export default {
-  ...DefaultTheme,
-  Layout: Layout
+  extends: Theme,
+  Layout: () => {
+    return h(Theme.Layout, null, {});
+  },
+  enhanceApp({ app, router, siteData }) {}
 };

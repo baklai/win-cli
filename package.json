@@ -1,5 +1,6 @@
 {
   "name": "win-cli",
+  "type": "module",
   "version": "1.0.0",
   "description": "Windows command line interpreter",
   "author": {
@@ -23,8 +24,8 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": "v16.15.0",
-    "npm": "8.5.5"
+    "node": ">=18.17.1",
+    "npm": "~9.6.7"
   },
   "scripts": {
     "dev": "vitepress dev",
@@ -35,6 +36,6 @@
   "devDependencies": {
     "@vite-pwa/assets-generator": "^0.0.4",
     "@vite-pwa/vitepress": "^0.2.0",
-    "vitepress": "^1.0.0-beta.7"
+    "vitepress": "^1.0.0-rc.4"
   }
 }

@@ -290,7 +290,16 @@ export default withPwa(
 
       i18nRouting: false,
 
-      externalLinkIcon: false
+      externalLinkIcon: false,
+
+      notFound: {
+        title: 'СТОРІНКУ НЕ ЗНАЙДЕНО',
+        quote:
+          'Якщо ви не зміните свій напрямок і продовжите шукати, ви можете опинитися там, куди прямуєте.',
+        linkLabel: 'йти додому',
+        linkText: 'На головну сторінку',
+        code: '404'
+      }
     },
 
     srcExclude: ['**/README.md'],
