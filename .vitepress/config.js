@@ -54,7 +54,8 @@ const SIDEBAR_QUIDE = [
         text: 'Переміщення файлів',
         link: '/guide/commands/move'
       },
-      { text: 'Видалення файлів', link: '/guide/commands/del' }
+      { text: 'Видалення файлів', link: '/guide/commands/del' },
+      { text: 'Вихід з командного рядка', link: '/guide/commands/exit' }
     ]
   },
 
