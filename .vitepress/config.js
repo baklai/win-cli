@@ -61,7 +61,7 @@ const SIDEBAR_QUIDE = [
 
   {
     text: 'Файли і текст',
-    collapsed: false,
+    collapsed: true,
     items: [
       { text: 'Виведення тексту', link: '/guide/commands/echo' },
       { text: 'Виведення вмісту текстових файлів', link: '/guide/commands/type' },
@@ -82,7 +82,7 @@ const SIDEBAR_QUIDE = [
 
   {
     text: 'Адміністративні команди',
-    collapsed: false,
+    collapsed: true,
     items: [
       { text: 'Інформація про мережу', link: '/guide/commands/ipconfig' },
       { text: 'Стан мережевих підключень', link: '/guide/commands/netstat' },
@@ -108,7 +108,7 @@ const SIDEBAR_QUIDE = [
 
   {
     text: 'Робота з даними та дисками',
-    collapsed: false,
+    collapsed: true,
     items: [
       { text: 'Керування дисками та розділами', link: '/guide/commands/diskpart' },
       { text: 'Форматування дисків', link: '/guide/commands/format' },
@@ -118,7 +118,7 @@ const SIDEBAR_QUIDE = [
 
   {
     text: 'Системні інструменти',
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: 'Інформація про систему',
