@@ -11,6 +11,9 @@ description: echo • виведення повідомлень
 
 ```cmd
 echo [<текст>]
+```
+
+```cmd
 echo [on | off]
 ```
 
