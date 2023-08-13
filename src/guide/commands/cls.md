@@ -5,7 +5,7 @@ description: cls • очищення командного рядка
 
 # Очищення командного рядка
 
-Команда **[cls](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cls 'Microsoft Dosc')** очищає вікно командного рядка, видаляючи всі попередні команди та вивід. Це робить командний рядок чистим, починаючи з чистого листа.
+Команда **[cls](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cls 'Microsoft Dosc')** очищає вікно командного рядка, видаляючи всі попередні команди та вивід. Це дозволяє почати з чистого листа.
 
 ## Синтаксис
 
