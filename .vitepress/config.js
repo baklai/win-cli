@@ -206,7 +206,7 @@ export default withPwa(
 
       siteTitle: false,
 
-      outline: 2,
+      outline: [2, 3],
       outlineTitle: 'На цій сторінці',
 
       nav: NAVBAR,
