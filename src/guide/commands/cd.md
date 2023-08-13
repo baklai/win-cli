@@ -7,6 +7,12 @@ description: cd • переміщення між каталогами
 
 Команда **[cd](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cd 'Microsoft Dosc')** дозволяє переміщуватися між каталогами на вашому комп'ютері. Ви можете використовувати абсолютний шлях або відносний шлях для навігації між каталогами.
 
+::: tip Примітка
+
+Ця команда така ж, як і команда **[chdir](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/chdir 'Microsoft Dosc')**.
+
+:::
+
 ## Синтаксис
 
 ```cmd
