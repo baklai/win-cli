@@ -27,7 +27,7 @@ const SIDEBAR_QUIDE = [
       },
       { text: 'Очищення командного рядка', link: '/guide/commands/cls' },
       {
-        text: 'Робота з каталогами',
+        text: 'Переміщення між каталогами',
         link: '/guide/commands/cd'
       },
       {
