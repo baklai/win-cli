@@ -22,6 +22,11 @@ const SIDEBAR_QUIDE = [
     collapsed: false,
     items: [
       {
+        text: 'Колір командного рядка',
+        link: '/guide/commands/color'
+      },
+      { text: 'Очищення командного рядка', link: '/guide/commands/cls' },
+      {
         text: 'Робота з каталогами',
         link: '/guide/commands/cd'
       },
@@ -49,8 +54,7 @@ const SIDEBAR_QUIDE = [
         text: 'Переміщення файлів',
         link: '/guide/commands/move'
       },
-      { text: 'Видалення файлів', link: '/guide/commands/del' },
-      { text: 'Очищення командного рядка', link: '/guide/commands/cls' }
+      { text: 'Видалення файлів', link: '/guide/commands/del' }
     ]
   },
 

@@ -39,6 +39,11 @@ a:hover {
   text-decoration: none !important;
 }
 
+table {
+  display: table !important;
+  width: 100% !important;
+}
+
 .image-bg {
   position: absolute !important;
   top: 50% !important;
