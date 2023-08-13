@@ -34,5 +34,5 @@ features:
   - icon: 🖥
     title: Пісочниця
     details: Ізольоване середовище для тестування (onWorks), що дозволить навчитися використовувати команди безпечно
-    link: https://www.onworks.net/programs/terminal-online
+    link: https://www.onworks.net/uk/programs/terminal-online
 ---
