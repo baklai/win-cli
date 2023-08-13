@@ -145,10 +145,10 @@ export default withPwa(
     cleanUrls: true,
     lastUpdated: true,
 
-    // sitemap: {
-    //   hostname: HOST_NAME,
-    //   lastmodDateOnly: false
-    // },
+    sitemap: {
+      hostname: HOST_NAME,
+      lastmodDateOnly: false
+    },
 
     lang: 'uk-UA',
     title: 'WIN:\\CLI',
