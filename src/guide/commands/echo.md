@@ -1,9 +1,9 @@
 ---
-title: Виведення тексту
-description: echo • виведення тексту
+title: Виведення повідомлень
+description: echo • виведення повідомлень
 ---
 
-# Виведення тексту
+# Виведення повідомлень
 
 Команда **[echo](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/echo 'Microsoft Dosc')** виводить текст або змінні у командний рядок або файл.
 
