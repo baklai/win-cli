@@ -16,7 +16,7 @@ const  { isDark }  = useData();
 <b>CMD (англ. command line interpreter)</b> - це інтерпретатор командної строки для операційних систем OS/2, Windows CE і для сімейства операційних систем, що базуються на Windows NT.
 </div>
 
-::: info ℹ️ Документація
+::: info Документація
 Посилання на документацію від [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmd 'Microsoft Dosc').
 :::
 
