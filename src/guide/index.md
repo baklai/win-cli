@@ -17,7 +17,7 @@ const  { isDark }  = useData();
 </div>
 
 ::: info Документація
-Посилання на документацію від [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmd 'Microsoft Dosc').
+Посилання на документацію від [Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands 'Microsoft Dosc').
 :::
 
 ::: tip Примітка

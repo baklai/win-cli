@@ -21,12 +21,21 @@ const SIDEBAR_QUIDE = [
     text: 'Основні команди',
     collapsed: false,
     items: [
+      { text: 'Командний рядок', link: '/guide/commands/cmd' },
       {
         text: 'Колір командного рядка',
         link: '/guide/commands/color'
       },
       { text: 'Очищення командного рядка', link: '/guide/commands/cls' },
       { text: 'Виведення повідомлень', link: '/guide/commands/echo' },
+      { text: 'Вихід з командного рядка', link: '/guide/commands/exit' }
+    ]
+  },
+
+  {
+    text: 'Файлова система',
+    collapsed: true,
+    items: [
       {
         text: 'Переміщення між каталогами',
         link: '/guide/commands/cd'
@@ -55,8 +64,7 @@ const SIDEBAR_QUIDE = [
         text: 'Переміщення файлів',
         link: '/guide/commands/move'
       },
-      { text: 'Видалення файлів', link: '/guide/commands/del' },
-      { text: 'Вихід з командного рядка', link: '/guide/commands/exit' }
+      { text: 'Видалення файлів', link: '/guide/commands/del' }
     ]
   },
 
