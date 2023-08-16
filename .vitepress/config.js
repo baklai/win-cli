@@ -206,7 +206,9 @@ export default withPwa(
     ],
 
     markdown: {
-      lineNumbers: false
+      theme: 'vitesse-dark', // https://github.com/shikijs/shiki/blob/main/docs/themes.md
+      lineNumbers: false,
+      languages: ['cmd']
     },
 
     themeConfig: {
