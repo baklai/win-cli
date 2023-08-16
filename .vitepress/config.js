@@ -207,8 +207,8 @@ export default withPwa(
 
     markdown: {
       theme: 'vitesse-dark', // https://github.com/shikijs/shiki/blob/main/docs/themes.md
-      lineNumbers: false,
-      languages: ['cmd']
+      languages: ['cmd', 'bat', 'vb', 'powershell', 'ps', 'ps1'], // https://github.com/shikijs/shiki/blob/main/docs/languages.md
+      lineNumbers: false
     },
 
     themeConfig: {
