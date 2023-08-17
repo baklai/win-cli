@@ -2,8 +2,6 @@
 
 <img src="/src/public/img/preview.png">
 
-<img src="/src/public/img/preview.gif">
-
 ## Demo application -> [Windows cli service](https://win-cli.netlify.app/)
 
 ## Setup
