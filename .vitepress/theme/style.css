@@ -1,6 +1,10 @@
 :root {
   --vp-c-brand: #00a2e9 !important;
 
+  --vp-home-hero-name-color: #00a2e9 !important;
+
+  --vp-c-brand-1: #00a2e9 !important;
+
   --vp-button-brand-border: #039adb !important;
   --vp-button-brand-hover-border: #00a2e9 !important;
   --vp-button-brand-hover-bg: #039adb !important;
