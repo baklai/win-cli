@@ -2,7 +2,7 @@
 
 <img src="/src/public/img/preview.png">
 
-## Demo [![Netlify Status](https://api.netlify.com/api/v1/badges/9a95cf10-032a-41ca-9f33-e797564da1d6/deploy-status)](https://app.netlify.com/sites/win-cli/deploys) [Windows cli service](https://win-cli.netlify.app/)
+## [![Netlify Status](https://api.netlify.com/api/v1/badges/9a95cf10-032a-41ca-9f33-e797564da1d6/deploy-status)](https://app.netlify.com/sites/win-cli/deploys) [Windows command line interpreter](https://win-cli.netlify.app/)
 
 ## Setup
 
