@@ -30,7 +30,7 @@ npm run build
 
 | Key                    | Comment                                                        |
 | ---------------------- | -------------------------------------------------------------- |
-| `HOST_NAME`            | Hostname for sitemap generation                                |
+| `VITE_HOST_NAME`       | Hostname for sitemap generation                                |
 | ---------------------- | -------------------------------------------------------------- |
 
 To preview the static generated app, run `npm run preview`

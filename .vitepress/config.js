@@ -1,7 +1,7 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig, loadEnv } from 'vitepress';
 import { withPwa } from '@vite-pwa/vitepress';
 
-const HOST_NAME = 'https://win-cli.netlify.app';
+const { VITE_HOST_NAME } = loadEnv('', process.cwd());
 
 const NAVBAR = [
   { text: 'Документація', link: '/guide/' },
@@ -159,8 +159,8 @@ export default withPwa(
     lastUpdated: true,
 
     sitemap: {
-      hostname: HOST_NAME,
-      lastmodDateOnly: false
+      hostname: VITE_HOST_NAME,
+      lastmodDateOnly: true
     },
 
     lang: 'uk-UA',
@@ -180,10 +180,10 @@ export default withPwa(
           content: 'Керівництво з використання можливостей командного рядка Windows'
         }
       ],
-      ['meta', { property: 'og:url', content: `${HOST_NAME ? HOST_NAME : '/'}` }],
+      ['meta', { property: 'og:url', content: `${VITE_HOST_NAME ? VITE_HOST_NAME : '/'}` }],
       ['meta', { property: 'og:type', content: 'article' }],
       ['meta', { property: 'og:site_name', content: 'WIN:\\CLI • Інтерпретатор командного рядка' }],
-      ['meta', { property: 'og:image', content: `${HOST_NAME}/img/icon.png` }],
+      ['meta', { property: 'og:image', content: `${VITE_HOST_NAME}/img/icon.png` }],
       ['meta', { property: 'og:image:width', content: '512' }],
       ['meta', { property: 'og:image:height', content: '512' }],
       ['meta', { property: 'og:keywords', content: 'windows, cmd, bat' }],
