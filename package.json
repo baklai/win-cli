@@ -29,7 +29,7 @@
   },
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
+    "build": "vitepress build --minify false",
     "preview": "vitepress preview",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal src/public/img/icon.png"
   },
