@@ -204,11 +204,11 @@ export default withPwa(
       ]
     ],
 
-    // markdown: {
-    //   theme: 'vitesse-dark', // https://github.com/shikijs/shiki/blob/main/docs/themes.md
-    //   languages: ['cmd', 'bat', 'vb', 'powershell', 'ps', 'ps1'], // https://github.com/shikijs/shiki/blob/main/docs/languages.md
-    //   lineNumbers: true
-    // },
+    markdown: {
+      theme: 'vitesse-dark', // https://github.com/shikijs/shiki/blob/main/docs/themes.md
+      languages: ['cmd', 'bat', 'vb', 'powershell', 'ps', 'ps1'], // https://github.com/shikijs/shiki/blob/main/docs/languages.md
+      lineNumbers: false
+    },
 
     themeConfig: {
       logo: { src: '/img/logo.png', alt: 'WIN:\\CMD' },
