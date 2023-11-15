@@ -13,3 +13,5 @@
   minify = false
 [build.processing.js]
   minify = false
+[build.processing.xml]
+  minify = false
