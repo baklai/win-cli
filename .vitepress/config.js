@@ -163,15 +163,15 @@ export default withPwa(
     },
 
     lang: 'uk-UA',
-    title: 'WIN:\\CLI',
-    titleTemplate: 'WIN:\\CLI • :title',
+    title: 'WIN:\\CMD',
+    titleTemplate: 'WIN:\\CMD • :title',
     description: 'Керівництво з використання можливостей командного рядка Windows',
 
     head: [
       ['meta', { property: 'name', content: 'Dmitrii Baklai' }],
       ['meta', { property: 'keywords', content: 'windows, cmd, bat' }],
       ['meta', { property: 'language', content: 'uk-UA' }],
-      ['meta', { property: 'og:title', content: 'WIN:\\CLI • Інтерпретатор командного рядка' }],
+      ['meta', { property: 'og:title', content: 'WIN:\\CMD • Інтерпретатор командного рядка' }],
       [
         'meta',
         {
@@ -181,7 +181,7 @@ export default withPwa(
       ],
       ['meta', { property: 'og:url', content: `${VITE_HOST_NAME ? VITE_HOST_NAME : '/'}` }],
       ['meta', { property: 'og:type', content: 'article' }],
-      ['meta', { property: 'og:site_name', content: 'WIN:\\CLI • Інтерпретатор командного рядка' }],
+      ['meta', { property: 'og:site_name', content: 'WIN:\\CMD • Інтерпретатор командного рядка' }],
       ['meta', { property: 'og:image', content: `${VITE_HOST_NAME}/img/icon.png` }],
       ['meta', { property: 'og:image:width', content: '512' }],
       ['meta', { property: 'og:image:height', content: '512' }],
@@ -204,14 +204,14 @@ export default withPwa(
       ]
     ],
 
-    markdown: {
-      theme: 'vitesse-dark', // https://github.com/shikijs/shiki/blob/main/docs/themes.md
-      languages: ['cmd', 'bat', 'vb', 'powershell', 'ps', 'ps1'], // https://github.com/shikijs/shiki/blob/main/docs/languages.md
-      lineNumbers: false
-    },
+    // markdown: {
+    //   theme: 'vitesse-dark', // https://github.com/shikijs/shiki/blob/main/docs/themes.md
+    //   languages: ['cmd', 'bat', 'vb', 'powershell', 'ps', 'ps1'], // https://github.com/shikijs/shiki/blob/main/docs/languages.md
+    //   lineNumbers: true
+    // },
 
     themeConfig: {
-      logo: { src: '/img/logo.png', alt: 'WIN:\\CLI' },
+      logo: { src: '/img/logo.png', alt: 'WIN:\\CMD' },
 
       siteTitle: false,
 
@@ -312,11 +312,11 @@ export default withPwa(
     srcExclude: ['**/README.md'],
 
     pwa: {
-      outDir: '../.vitepress/dist',
+      outDir: '.vitepress/dist',
       includeAssets: ['favicon.ico'],
       manifest: {
-        name: 'WIN:\\CLI • Інтерпретатор командного рядка',
-        short_name: 'WIN:\\CLI',
+        name: 'WIN:\\CMD • Інтерпретатор командного рядка',
+        short_name: 'WIN:\\CMD',
         description: 'Інтерпретатор командного рядка',
         theme_color: '#ffffff',
         icons: [

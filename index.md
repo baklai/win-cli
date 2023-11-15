@@ -4,8 +4,8 @@ title: Інтерпретатор командного рядка
 description: Керівництво з використання можливостей командного рядка Windows
 
 hero:
-  name: CLI Windows
-  text: Windows command line interpreter
+  name: CMD Windows
+  text: Інтерпретатор командного рядка
   tagline: Керівництво з використання можливостей командного рядка Windows
   image:
     src: /img/hero.png
