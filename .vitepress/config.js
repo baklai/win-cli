@@ -152,7 +152,6 @@ const SIDEBAR_EXAMPLES = [
 export default withPwa(
   defineConfig({
     base: '/',
-    srcDir: './src',
 
     appearance: true,
     cleanUrls: true,
