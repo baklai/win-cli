@@ -249,10 +249,7 @@ export default withPwa(
         {
           icon: 'linkedin',
           link: 'https://www.linkedin.com/in/baklai/'
-        },
-        { icon: 'twitter', link: 'https://twitter.com/baklaiDi' },
-        { icon: 'facebook', link: 'https://www.facebook.com/dmitrii.baklai' },
-        { icon: 'instagram', link: 'https://www.instagram.com/baklai.di/' }
+        }
       ],
 
       footer: {
